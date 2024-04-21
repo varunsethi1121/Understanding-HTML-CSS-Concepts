@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flexbox</title>
+    <link rel="shortcut icon" href="./self-confidence.png" type="image/x-icon">
+    <!-- Defining Inline CSS  -->
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container {
+            border: 15px solid #990011;
+            border-radius: 5px;
+            background: #97434d;
+            width: 750px;
+            height: 310px;
+            margin-left: 355px;
+        }
+
+        /* FLEX PROPERTIES ON CONTAINER */
+        .container {
+            display: flex;
+            /*BY THIS WE CAN MAKE ANY CONTAINER A FLEX BOX AND THEN WE CAN ARRANMGE THE ITEMS INSIDE THAT BOX WITH SOME PROPERTIES OF FLEX BOX*/
+            /* flex-direction: column; */
+            /*BY ADDING THSI WE CAN CHANGE THE MAIN AXIS TO VIRTICAL BY DEFAULT IT WAS HORIZONTAL*/
+            justify-content: space-evenly;
+            /*BY JUSTIFY CONTENT WE CAN ALIGN THE BOXES INSIDE ACCORDING TO OUR CHOICE HORIZONTALLY*/
+            /* align-items: center; */
+            /*BY ALIGN ITEM WE CAN ALIGN THE BOXES INSIDE ACCORDING TO OUR CHOICE VERTICALLY*/
+            flex-wrap: wrap;
+        }
+
+        .box {
+            border: 15px solid #fbe4e0;
+            border-radius: 5px;
+            background: #ffffff;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            margin: 2px;
+        }
+
+        /* FLEX PROPERTIES ON BOX */
+        .box2{
+            /* flex-grow: 1; */
+            align-self: center;
+        }
+        .box3{
+            align-self: flex-end;
+        }
+        .box4{
+            align-self: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Understanding Everything realted to FLEX BOX</h1>
+    <div class="container" id="flex">
+        <div class="box box1">
+            <h1>1</h1>
+        </div>
+        <div class="box box2">
+            <h1>2</h1>
+        </div>
+        <div class="box box3">
+            <h1>3</h1>
+        </div>
+        <div class="box box4">
+            <h1>4</h1>
+        </div>
+        <div class="box box5">
+            <h1>5</h1>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>

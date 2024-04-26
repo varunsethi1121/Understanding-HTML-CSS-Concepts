@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIONING</title>
+    <style>
+        /*CSS POSITION => RELATIVE, STATIC(default), ABSOLUTe, FIXED, STICKY */
+        .container{
+            border: 2px solid red;
+            background-color: rgb(204, 203, 203);
+            height: 4444px;
+        }
+        .box {
+            text-align: center;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        /* #box1 {
+            /* ABSOLUTE WILL POSITION A BOX RELATIVE TO ITYS PARENT ELEMENT AS NOW IN OUR CASE PARENT IS BODY SO IT WILL POSITION IT ACCORDING TO THE DIMENSIONS OF BODY 
+            position: absolute;;
+            top: 50PX;
+            left: 50PX;
+        } */
+        /* #box2 {
+            /* FIXED IS USED TO MAKE CHAT BOT WHICH REMAIN FIXED AT ITS ASSIGNED POSITION THROUGH OUT THE PAGE
+            position: fixed;
+            bottom: 2px;
+        }*/
+        /* #box3 {
+            /* RELATIVE TO ITS NORMAL POSITION WE ACN USE RIGHT LEFT TOP BOTTOM WITH RELATIVE AND IT WILL LEAVE A GAP AT ITS OLD OR WE CAN SAY NATURAL POSITION ANDS WE WE WANT THAT GAP SO WE WILL BE USING RELATIVE 
+            position: relative;
+            top: 10PX;
+            left: 10PX;
+        } */
+        /* #box4{
+            /* STICKY IS USED TO STICK ANY ELEMENT TO ITS DESIRED POSITION MAINLY USED TO MAKE NAVIGATION BARS 
+            position: sticky;
+            top:3px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1" style="background-color: red;">1</div>
+        <div class="box" id="box2" style="background-color: yellow;">2</div>
+        <div class="box" id="box3" style="background-color: green;">3</div>
+        <div class="box" id="box4" style="background-color: blue;">4</div>
+    </div>
+
+</body>
+
+</html>

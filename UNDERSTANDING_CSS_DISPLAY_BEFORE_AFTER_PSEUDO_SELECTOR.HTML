@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFTER AND BEFORE PSEUDO SELECTOR</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0;
+        }
+        header::before{
+            content:"";
+            background: url(./c736f83436d84ddc039fe42de40c8ec7.jpg) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+        section {
+            margin: 5px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+            height: 100%;
+        }
+
+        section::before {
+            content: 'Content added Before Section';
+        }
+
+        section::after {
+            content: 'Content added After Section';
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        li {
+            list-style: none;
+            padding: 35px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Project</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Development World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum tempore fugit libero obcaecati possimus,
+            maiores dolor harum autem eligendi quidem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus animi distinctio architecto ad,
+            possimus pariatur sunt at laudantium vero</p>
+    </section>
+</body>
+
+</html>
